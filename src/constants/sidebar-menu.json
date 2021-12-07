@@ -1,0 +1,45 @@
+{
+    "id": "sidebar_menu",
+    "data": {
+        "menu": {
+            "name": "Menu",
+            "items": [
+                {
+                    "id": "home",
+                    "name": "Home",
+                    "target": "#"
+                },
+                {
+                    "id": "my_task",
+                    "name": "My Tasks",
+                    "target": "#"
+                },
+                {
+                    "id": "notifications",
+                    "name": "Notifications",
+                    "target": "#"
+                }
+            ]
+        },
+        "teams": {
+            "name": "Teams",
+            "items": [
+                {
+                    "id": "researchers",
+                    "name": "Researchers",
+                    "target": "#"
+                },
+                {
+                    "id": "fe_be_team",
+                    "name": "FE/BE Team",
+                    "target": "#"
+                },
+                {
+                    "id": "pm_team",
+                    "name": "PM Team",
+                    "target": "#"
+                }
+            ]
+        }
+    }
+}

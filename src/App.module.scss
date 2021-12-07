@@ -1,0 +1,99 @@
+@use "./components/variables.scss" as utils;
+
+.root {
+  // overflow-x: auto;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  @include utils.mq("sm") {
+    width: fit-content;
+    overflow-y: hidden;
+  }
+}
+
+.content {
+  overflow: auto;
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  main {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.header {
+  &-title {
+    & > span {
+      margin-right: 4rem;
+      font-weight: 900;
+      font-size: 1.75rem;
+    }
+
+    & > button {
+      color: var(--color-grey-1000);
+      background: var(--color-grey-500);
+    }
+  }
+
+  &-detail {
+    & > div:nth-of-type(1) {
+      display: flex;
+      gap: 0.25rem;
+    }
+  }
+}
+
+.new-task {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & > div {
+    &:nth-of-type(1) {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    &:nth-of-type(3) {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+  }
+
+  & div[data-input="true"] {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label {
+      font-weight: bold;
+    }
+  }
+}

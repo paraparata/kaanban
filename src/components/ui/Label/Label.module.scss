@@ -1,0 +1,34 @@
+.root {
+  padding: 0.5em 1.5em;
+  background: var(--color-grey-500);
+  border-radius: 15em;
+  font-weight: bold;
+  font-size: 0.75rem;
+
+  &[label-type="tag"] {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+}
+
+.status {
+  font-weight: bold;
+
+  &-success {
+    color: var(--color-primary);
+    background: var(--color-accent);
+  }
+  &-warning {
+    color: var(--color-yellow);
+    background: var(--color-yellow-accent);
+  }
+  &-info {
+    color: var(--color-blue);
+    background: var(--color-blue-accent);
+  }
+  &-danger {
+    color: var(--color-red);
+    background: var(--color-red-accent);
+  }
+}

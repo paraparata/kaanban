@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+
+.root {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.75em 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25em;
+  color: white;
+  background: var(--color-secondary);
+  border: none;
+  border-radius: 15em;
+  outline: none;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover,
+  &:focus {
+    background: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.secondary {
+  border-radius: 0.75em;
+}
+
+.text {
+  color: var(--color-primary);
+  background: transparent;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  width: min-content;
+  padding: 0.5em;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

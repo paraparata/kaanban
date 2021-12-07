@@ -1,0 +1,21 @@
+.root {
+  width: fit-content;
+  object-fit: cover;
+}
+
+.circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.size {
+  &-lg {
+    width: 56px;
+  }
+  &-base {
+    width: 24px;
+  }
+  &-sm {
+    width: 16px;
+  }
+}
