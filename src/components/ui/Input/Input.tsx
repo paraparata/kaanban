@@ -10,7 +10,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   outlined?: boolean;
 }
 
-export const Input: React.FC<Props> = ({
+const Input: React.FC<Props> = ({
   className,
   prefix,
   suffix,
